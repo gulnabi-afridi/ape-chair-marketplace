@@ -8,7 +8,7 @@ function UnListed() {
     <Box w="100%">
       <Grid templateColumns="repeat(3,1fr)" gap={36} mt="3rem">
         {[0,1,2,3,4,5,6,7,8].map((listed,index)=>{
-           return  <Card/>
+           return  <Card key={index}/>
         })}
       </Grid>
     </Box>

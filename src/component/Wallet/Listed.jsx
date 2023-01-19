@@ -11,7 +11,7 @@ function Listed() {
       <Box w="100%">
       <Grid templateColumns="repeat(3,1fr)" gap={36} mt="3rem">
         {[0,1,2,3].map((listed,index)=>{
-           return  <Card/>
+           return  <Card key={index}/>
         })}
       </Grid>
     </Box>
